@@ -1,0 +1,12 @@
+.announcement {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #000;
+  padding: 12px 0px;
+  &__message {
+    font-size: 13px;
+  }
+}

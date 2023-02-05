@@ -1,0 +1,22 @@
+.hero {
+  text-align: center;
+  background-image: url("https://cdn.shopify.com/s/files/1/0709/9442/8202/files/mintosko-Ro0PNXcpCus-unsplash_1.jpg?v=1674256479&width=1500");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__heading {
+    color: #fff;
+    font-weight: 400;
+    font-size: 45px;
+  }
+  &__button {
+    margin-top: 20px;
+    background-color: #fff;
+    color: #222;
+  }
+}

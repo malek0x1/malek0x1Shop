@@ -1,0 +1,20 @@
+.collection {
+  &__heading {
+    padding-top: 40px;
+    padding: 20px;
+  }
+  &__wrapper {
+    padding: 20px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media screen and (max-width: 780px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 500px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    grid-gap: 10px;
+  }
+}
