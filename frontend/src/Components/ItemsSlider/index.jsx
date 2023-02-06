@@ -1,12 +1,14 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Button from "../Button/index";
 import Card from "../Card/index";
+import SkeletonLoader from "../SkeletonLoader/index";
 import "swiper/css";
 import "./style.scss";
 import { useMediaQuery } from "react-responsive";
-const ItemsSlider = ({ data }) => {
+import { Link } from "react-router-dom";
+const ItemsSlider = ({ data, skeleton }) => {
   const isMobile = useMediaQuery({ maxWidth: 700 });
-  console.log(isMobile);
   return (
     <div className="itemsSlider container">
       <h1 className="itemsSlider__heading">{data.category}</h1>
@@ -16,12 +18,43 @@ const ItemsSlider = ({ data }) => {
         onSlideChange={() => console.log("")}
         onSwiper={(swiper) => console.log("")}
       >
-        {data.children.map((item) => (
-          <SwiperSlide>
-            <Card img={item.image} price={`$${item.price}`} name={item.name} />
-          </SwiperSlide>
-        ))}
+        {!skeleton ? (
+          data.children.map((item) => (
+            <SwiperSlide>
+              <Link to={`/product/${data.id}/${item.id}`}>
+                <Card
+                  img={item.image}
+                  price={`$${item.price}`}
+                  name={item.name}
+                />
+              </Link>
+            </SwiperSlide>
+          ))
+        ) : (
+          <>
+            <SwiperSlide>
+              <SkeletonLoader />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SkeletonLoader />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SkeletonLoader />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SkeletonLoader />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SkeletonLoader />
+            </SwiperSlide>
+          </>
+        )}
       </Swiper>
+      <div className="itemsSlider__btnWrapper">
+        <Link to={`/collection/${data.id}`}>
+          <Button className="itemsSlider__btnWrapper__btn" text="View All" />
+        </Link>
+      </div>
     </div>
   );
 };

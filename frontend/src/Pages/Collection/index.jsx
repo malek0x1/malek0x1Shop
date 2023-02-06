@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Announcement from "../../Components/Announcement";
 import Card from "../../Components/Card";
 import Header from "../../Components/Header";
+import SkeletonLoader from "../../Components/SkeletonLoader";
 import "./style.scss";
 const Collection = () => {
   let { collection } = useParams();
@@ -10,7 +11,7 @@ const Collection = () => {
   const [res, setRes] = useState(false);
   const fetchHandle = async () => {
     const output = await fetch(
-      `http://192.168.1.8:3002/api/products/${collection}`
+      `${process.env.REACT_APP_API_URL}/api/products/${collection}`
     )
       .then((res) => res.json())
       .then((r) => setRes(r))
@@ -29,10 +30,23 @@ const Collection = () => {
       <div className="collection__wrapper container">
         {res ? (
           res.children.map((item) => (
-            <Card img={item.image} price={`$${item.price}`} name={item.name} />
+            <Link to={`/product/${res._id}/${item.id}`}>
+              <Card
+                img={item.image}
+                price={`$${item.price}`}
+                name={item.name}
+              />
+            </Link>
           ))
         ) : (
-          <h1>LOADING.....</h1>
+          <>
+            <SkeletonLoader />
+            <SkeletonLoader />
+            <SkeletonLoader />
+            <SkeletonLoader />
+            <SkeletonLoader />
+            <SkeletonLoader />
+          </>
         )}
       </div>
     </div>

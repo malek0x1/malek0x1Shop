@@ -27,9 +27,9 @@ const Header = () => {
         }}
       >
         {open ? (
-          <i class="uil uil-multiply header__icons__item--toggle header__icons__item"></i>
+          <i className="uil uil-multiply header__icons__item--toggle header__icons__item"></i>
         ) : (
-          <i class="uil uil-bars header__icons__item--toggle header__icons__item"></i>
+          <i className="uil uil-bars header__icons__item--toggle header__icons__item"></i>
         )}
       </div>
 
@@ -58,9 +58,9 @@ const Header = () => {
         ))}
       </div>
       <div className="header__icons">
-        <i class="uil uil-search header__icons__item"></i>
-        <i class="uil uil-user header__icons__item"></i>
-        <i class="uil uil-shopping-bag header__icons__item"></i>
+        <i className="uil uil-search header__icons__item"></i>
+        <i className="uil uil-user header__icons__item"></i>
+        <i className="uil uil-shopping-bag header__icons__item"></i>
       </div>
     </div>
   );
