@@ -21,8 +21,9 @@ const ItemsSlider = ({ data, skeleton }) => {
         {!skeleton ? (
           data.children.map((item) => (
             <SwiperSlide>
-              <Link to={`/product/${data.id}/${item.id}`}>
+              <Link to={`/product/${item.categoryId}/${item.id}`}>
                 <Card
+                  colors={item.variants.color}
                   img={item.image}
                   price={`$${item.price}`}
                   name={item.name}
@@ -32,21 +33,11 @@ const ItemsSlider = ({ data, skeleton }) => {
           ))
         ) : (
           <>
-            <SwiperSlide>
-              <SkeletonLoader />
-            </SwiperSlide>
-            <SwiperSlide>
-              <SkeletonLoader />
-            </SwiperSlide>
-            <SwiperSlide>
-              <SkeletonLoader />
-            </SwiperSlide>
-            <SwiperSlide>
-              <SkeletonLoader />
-            </SwiperSlide>
-            <SwiperSlide>
-              <SkeletonLoader />
-            </SwiperSlide>
+            {[...Array(8)].map((card) => (
+              <SwiperSlide>
+                <SkeletonLoader />
+              </SwiperSlide>
+            ))}
           </>
         )}
       </Swiper>

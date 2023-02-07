@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import SearchComp from "../SearchComp";
 import "./style.scss";
 const navItems = [
   { name: "home", href: "/" },
-  { name: "Category1", href: "/category1" },
-  { name: "Category2", href: "/category2" },
-  { name: "Category3", href: "/category3" },
+  { name: "Hoodies", href: "/collection/1" },
+  { name: "Pants", href: "/collection/2" },
+  { name: "SweatShirts", href: "/collection/3" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
 const Header = () => {
   const [open, isOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   useEffect(() => {
     open
@@ -20,6 +22,7 @@ const Header = () => {
 
   return (
     <div className="header container">
+      {searchOpen && <SearchComp setSearchOpen={setSearchOpen} />}
       <div
         className="header__menuIcon"
         onClick={() => {
@@ -58,7 +61,12 @@ const Header = () => {
         ))}
       </div>
       <div className="header__icons">
-        <i className="uil uil-search header__icons__item"></i>
+        <i
+          onClick={() => {
+            setSearchOpen(true);
+          }}
+          className="uil uil-search header__icons__item"
+        ></i>
         <i className="uil uil-user header__icons__item"></i>
         <i className="uil uil-shopping-bag header__icons__item"></i>
       </div>

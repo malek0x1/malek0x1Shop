@@ -1,0 +1,95 @@
+.searchComp {
+  transition: 10s all ease;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__wrapper {
+    border: 1px solid #333;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 0px 10px;
+    width: 40%;
+    &-inpt {
+      padding: 5px;
+      outline: none;
+      border: none;
+      height: 40px;
+      width: 100%;
+    }
+    &-close {
+      position: absolute;
+      right: -40px;
+    }
+    &__searchResult {
+      overflow-y: scroll;
+      position: absolute;
+      width: 40%;
+      max-height: 200px;
+      padding-top: 20px;
+      background-color: #fff;
+      top: 62px;
+      &__item {
+        border-top: 1px solid #ddf;
+        cursor: pointer;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        padding: 0px 20px;
+        justify-content: flex-start;
+        &-img {
+          width: 45px;
+          border-radius: 4px;
+        }
+        &-name {
+          color: #333;
+          font-weight: 400;
+          font-size: 14px;
+        }
+        &:hover {
+          background-color: #eee;
+        }
+      }
+    }
+  }
+}
+
+// const productSchema = new mongoose.Schema({
+//     category: String,
+//     children: [
+//       {
+//         id: Number,
+//         name: String,
+//         price: Number,
+//         variants: {
+//           color: [String],
+//           sizes: [String],
+//         },
+//         image: String,
+//         description: String,
+//       },
+//     ],
+//   });
+
+// app.get("/api/products/search/:keyword", async (req, res) => {
+//     const keyword = req.params.keyword;
+
+//     // Find all products where name contains the keyword
+//     const products = await Product.find({
+//       "children.name": { $regex: keyword, $options: "i" },
+//     });
+//     res.header({ "Access-Control-Allow-Origin": "*" });
+
+//     // Return the matching products
+//     res.json(products);
+//   });

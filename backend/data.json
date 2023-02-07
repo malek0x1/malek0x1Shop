@@ -1,227 +1,397 @@
 [
   {
+    "categoryId": 1,
     "category": "Hoodies",
     "children": [
       {
         "id": 1,
-        "name": "Long Sleeve",
+        "categoryId": 1,
+
+        "name": "Street King",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 2,
-        "name": "Long Sleeve",
+        "categoryId": 1,
+
+        "name": "Hood Royalty",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2023-01-06_16-49-12_UTC_10.jpg?v=1674315274&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 3,
-        "name": "Long Sleeve",
+        "categoryId": 1,
+
+        "name": "Urban Jungle",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2023-01-06_16-49-12_UTC_5.jpg?v=1674399193&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 4,
-        "name": "Long Sleeve",
+        "categoryId": 1,
+
+        "name": "The Hoodie Co.",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/image_204d5022-b9a3-4b21-bc48-6009d06fb569.jpg?v=1675193236&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 5,
-        "name": "Long Sleeve",
+        "categoryId": 1,
+
+        "name": "Graffiti Gang",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 6,
-        "name": "Long Sleeve",
+        "categoryId": 1,
+
+        "name": "HoodLife Apparel",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2023-01-06_16-49-12_UTC_8.jpg?v=1674315447&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 7,
-        "name": "Long Sleeve",
+        "categoryId": 1,
+
+        "name": "Rebel Wear",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 8,
-        "name": "Long Sleeve",
+        "categoryId": 1,
+
+        "name": "Hoody Hype",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 9,
-        "name": "Long Sleeve",
+        "categoryId": 1,
+
+        "name": "Street Style Collection",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 10,
-        "name": "Long Sleeve",
+        "categoryId": 1,
+        "name": "The Hoodie Spot",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       }
     ]
   },
   {
+    "categoryId": 2,
     "category": "Pants",
     "children": [
       {
         "id": 11,
-        "name": "Long Sleeve",
+        "categoryId": 2,
+        "name": "Hip-Hop Hoodies",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-09-23_21-09-53_UTC_4.jpg?v=1674689586&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 12,
-        "name": "Long Sleeve",
+        "categoryId": 2,
+
+        "name": "Trendsetter Wear",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-12-06_17-15-03_UTC_3.jpg?v=1674402504&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 13,
-        "name": "Long Sleeve",
+        "categoryId": 2,
+
+        "name": "StreetWear Empire",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2023-01-06_16-49-12_UTC_10.jpg?v=1674315274&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 14,
-        "name": "Long Sleeve",
+        "categoryId": 2,
+        "name": "Hoodie Haven",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2023-01-04_15-42-08_UTC_7.jpg?v=1674401564&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 15,
-        "name": "Long Sleeve",
+        "categoryId": 2,
+        "name": "Fresh Threads",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-12-06_17-15-03_UTC_6.jpg?v=1674398920&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 16,
-        "name": "Long Sleeve",
+        "categoryId": 2,
+
+        "name": "Hoodie Vibes",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 17,
-        "name": "Long Sleeve",
+        "categoryId": 2,
+
+        "name": "Urban Attire",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2023-01-06_16-49-12_UTC_10.jpg?v=1674315274&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 18,
-        "name": "Long Sleeve",
+        "categoryId": 2,
+
+        "name": "Street Culture Clothing",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 19,
-        "name": "Long Sleeve",
+        "categoryId": 2,
+
+        "name": "Hoodie Dreams",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 20,
-        "name": "Long Sleeve",
+        "categoryId": 2,
+
+        "name": "Urban Edge Wear",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-12-06_17-15-03_UTC_4.jpg?v=1674398823&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       }
     ]
   },
   {
+    "categoryId": 3,
+
     "category": "SweatShirts",
     "children": [
       {
         "id": 21,
-        "name": "Long Sleeve",
+        "categoryId": 3,
+        "name": "Hooded Heroes",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2023-01-15_17-52-24_UTC_3.jpg?v=1674314263&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 22,
-        "name": "Long Sleeve",
+        "categoryId": 3,
+        "name": "The Hoodie Connection",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 23,
-        "name": "Long Sleeve",
+        "categoryId": 3,
+        "name": "Street Savvy Apparel",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 24,
-        "name": "Long Sleeve",
+        "categoryId": 3,
+        "name": "Hoodie Obsession",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 25,
-        "name": "Long Sleeve",
+        "categoryId": 3,
+        "name": "Urban Explorer Wear",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-12-12_05-45-33_UTC_1.jpg?v=1674403112&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 26,
-        "name": "Long Sleeve",
+        "categoryId": 3,
+
+        "name": "Hoodie Hypebeast",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 27,
-
-        "name": "Long Sleeve",
+        "categoryId": 3,
+        "name": "Street Trendsetters",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2022-11-30_19-03-00_UTC_3.jpg?v=1674399054&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 28,
-        "name": "Long Sleeve",
+        "categoryId": 3,
+        "name": "Hoodie Addict",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2023-01-06_16-49-12_UTC_10.jpg?v=1674315274&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 29,
-        "name": "Long Sleeve",
+        "categoryId": 3,
+        "name": "Urban Rebel Gear",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/2023-01-06_16-49-12_UTC_10.jpg?v=1674315274&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       },
       {
         "id": 30,
-        "name": "Long Sleeve",
+        "categoryId": 3,
+        "name": "Hoodie Hustle",
         "price": 100,
+        "variants": {
+          "color": ["red", "white", "blue", "black"],
+          "sizes": ["S", "M", "L", "XL"]
+        },
         "image": "//cdn.shopify.com/s/files/1/0709/9442/8202/products/image_04f5c8db-237d-4b8f-97fa-4f34c67e0480.jpg?v=1675191181&width=533",
-        "description": "Cotton 100%"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit possimus commodi laborum error molestiae dicta consequuntur quisquam, similique recusandae quaerat id odio"
       }
     ]
   }

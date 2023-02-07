@@ -22,7 +22,6 @@ const Home = () => {
   useEffect(() => {
     fetchHandle();
   }, []);
-  console.log(res);
   return (
     <div className="home">
       <Announcement message="Welcome To Our Store !" />

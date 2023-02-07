@@ -1,6 +1,7 @@
 import React from "react";
+import Swatch from "../Swatch";
 import "./style.scss";
-const Card = ({ img, name, price }) => {
+const Card = ({ img, name, price, colors }) => {
   return (
     <div className="card">
       <div className="card__image">
@@ -8,6 +9,7 @@ const Card = ({ img, name, price }) => {
       </div>
       <div className="card__name">{name}</div>
       {price && <div className="card__price">{price}</div>}
+      {colors && <Swatch colors={colors} />}
     </div>
   );
 };

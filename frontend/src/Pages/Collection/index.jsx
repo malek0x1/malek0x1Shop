@@ -9,17 +9,15 @@ const Collection = () => {
   let { collection } = useParams();
 
   const [res, setRes] = useState(false);
-  const fetchHandle = async () => {
-    const output = await fetch(
-      `${process.env.REACT_APP_API_URL}/api/products/${collection}`
-    )
+  const handleFetch = async () => {
+    await fetch(`${process.env.REACT_APP_API_URL}/api/products/${collection}`)
       .then((res) => res.json())
       .then((r) => setRes(r))
       .catch((e) => console.log(`error ${e}`));
   };
   useEffect(() => {
-    fetchHandle();
-  }, []);
+    handleFetch();
+  }, [res]);
   return (
     <div className="collection">
       <Announcement message="Welcome To Our Store !" />
@@ -30,8 +28,9 @@ const Collection = () => {
       <div className="collection__wrapper container">
         {res ? (
           res.children.map((item) => (
-            <Link to={`/product/${res._id}/${item.id}`}>
+            <Link key={item.id} to={`/product/${res._id}/${item.id}`}>
               <Card
+                colors={item.variants.color}
                 img={item.image}
                 price={`$${item.price}`}
                 name={item.name}
@@ -40,12 +39,9 @@ const Collection = () => {
           ))
         ) : (
           <>
-            <SkeletonLoader />
-            <SkeletonLoader />
-            <SkeletonLoader />
-            <SkeletonLoader />
-            <SkeletonLoader />
-            <SkeletonLoader />
+            {[...Array(8)].map((card) => (
+              <SkeletonLoader />
+            ))}
           </>
         )}
       </div>

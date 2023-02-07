@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.scss";
-const QuantityCounter = () => {
+const QuantityCounter = ({ setQuantity }) => {
   const [counter, setCounter] = useState(1);
 
   return (
@@ -10,9 +10,10 @@ const QuantityCounter = () => {
         <button
           onClick={() => {
             setCounter(counter - 1);
+            setQuantity(counter - 1);
           }}
           className="quantityCounter__wrapper__minus"
-          disabled={counter < 1}
+          disabled={counter === 1}
         >
           <i class="uil uil-minus"></i>
         </button>
@@ -20,6 +21,7 @@ const QuantityCounter = () => {
         <button
           onClick={() => {
             setCounter(counter + 1);
+            setQuantity(counter + 1);
           }}
           className="quantityCounter__wrapper__plus"
         >

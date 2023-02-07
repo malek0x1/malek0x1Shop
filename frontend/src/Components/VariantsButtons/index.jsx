@@ -26,12 +26,14 @@ const VariantsButtons = ({ title, data }) => {
     <div className="product__wrapper__info__variants">
       <p className="product__wrapper__info__variants-title">{title}</p>
       <div className="product__wrapper__info__variants__btns">
-        {data.map((v) => (
+        {data.map((v, index) => (
           <Button
             text={v}
             about={title}
             handleClick={handleClick}
-            className="product__wrapper__info__variants__btns-btn"
+            className={`product__wrapper__info__variants__btns-btn ${
+              index === 0 && "product__wrapper__info__variants__btns-btn-active"
+            }`}
           />
         ))}
       </div>
