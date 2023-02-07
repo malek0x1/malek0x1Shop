@@ -17,18 +17,19 @@ const Collection = () => {
   };
   useEffect(() => {
     handleFetch();
-  }, [res]);
+  }, [collection]);
+
   return (
     <div className="collection">
       <Announcement message="Welcome To Our Store !" />
       <Header />
       <h1 className="collection__heading container">
-        {res.category} Collection
+        {res[0]?.category} Collection
       </h1>
       <div className="collection__wrapper container">
         {res ? (
-          res.children.map((item) => (
-            <Link key={item.id} to={`/product/${res._id}/${item.id}`}>
+          res[0]?.children?.map((item) => (
+            <Link key={item.id} to={`/product/${res[0]?._id}/${item.id}`}>
               <Card
                 colors={item.variants.color}
                 img={item.image}

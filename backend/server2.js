@@ -13,6 +13,7 @@ mongoose.connect("mongodb://localhost/testdb1", {
 const Collection = mongoose.model(
   "collections",
   new mongoose.Schema({
+    categoryId: Number,
     category: String,
     children: [
       {
@@ -36,7 +37,7 @@ app.get("/api/collections/all/:limit?", async (req, res) => {
   const output = data.map((cat) => {
     return {
       category: cat.category,
-      id: cat._id,
+      id: cat.categoryId,
       children: cat.children.slice(
         req.params.limit ? Number(`-${req.params.limit}`) : 0
       ),
@@ -47,7 +48,7 @@ app.get("/api/collections/all/:limit?", async (req, res) => {
 });
 // fetch collection's products
 app.get("/api/products/:id", async (req, res) => {
-  const data = await Collection.findById(req.params.id);
+  const data = await Collection.find({ categoryId: req.params.id });
   res.header({ "Access-Control-Allow-Origin": "*" });
   res.json(data);
 });

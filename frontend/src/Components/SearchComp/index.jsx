@@ -5,7 +5,6 @@ const SearchComp = ({ setSearchOpen }) => {
   const [search, setSearch] = useState("");
   const [result, setResult] = useState([]);
   const ref = useRef();
-
   const handleSearch = async (keyword) => {
     await fetch(`${process.env.REACT_APP_API_URL}/api/search/${keyword}`)
       .then((res) => res.json())
