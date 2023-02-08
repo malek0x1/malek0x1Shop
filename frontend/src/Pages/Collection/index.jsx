@@ -12,7 +12,11 @@ const Collection = () => {
   const handleFetch = async () => {
     await fetch(`${process.env.REACT_APP_API_URL}/api/products/${collection}`)
       .then((res) => res.json())
-      .then((r) => setRes(r))
+      .then((r) => {
+        setTimeout(() => {
+          setRes(r);
+        }, 1000);
+      })
       .catch((e) => console.log(`error ${e}`));
   };
   useEffect(() => {

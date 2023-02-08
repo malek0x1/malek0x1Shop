@@ -18,6 +18,9 @@
     background-color: white;
     padding: 0px 10px;
     width: 40%;
+    @media screen and (max-width: 768px) {
+      width: 75%;
+    }
     &-inpt {
       padding: 5px;
       outline: none;
@@ -28,17 +31,26 @@
     &-close {
       position: absolute;
       right: -40px;
+      @media screen and (max-width: 768px) {
+        right: -30px;
+      }
     }
     &__searchResult {
       overflow-y: scroll;
       position: absolute;
       width: 40%;
+      @media screen and (max-width: 768px) {
+        width: 75%;
+      }
       max-height: 200px;
-      padding-top: 20px;
+      padding-top: 10px;
       background-color: #fff;
       top: 62px;
       &__item {
         border-top: 1px solid #ddf;
+        &:first-of-type {
+          border-top: none;
+        }
         cursor: pointer;
         width: 100%;
         height: 70px;

@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Collection from "./Pages/Collection";
+import ContactUs from "./Pages/Contact";
 import Home from "./Pages/Home";
 import NotFound from "./Pages/NotFound";
 import Product from "./Pages/Product";
@@ -9,6 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="collection">
           <Route path=":collection" element={<Collection />} />
         </Route>

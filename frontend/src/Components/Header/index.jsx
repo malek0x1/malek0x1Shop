@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import SearchComp from "../SearchComp";
 import "./style.scss";
 const navItems = [
@@ -7,7 +7,6 @@ const navItems = [
   { name: "Hoodies", href: "/collection/1" },
   { name: "Pants", href: "/collection/2" },
   { name: "SweatShirts", href: "/collection/3" },
-  { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
 const Header = () => {
@@ -37,12 +36,14 @@ const Header = () => {
       </div>
 
       <div className="header__logo">
-        <img
-          src="/logo.png"
-          alt=""
-          draggable={false}
-          className="header__logo-img"
-        />
+        <Link to="/">
+          <img
+            src="/logo.png"
+            alt=""
+            draggable={false}
+            className="header__logo-img"
+          />
+        </Link>
       </div>
       <div
         className={`header__navigation ${

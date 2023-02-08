@@ -2,11 +2,11 @@ import React from "react";
 
 const SkeletonLoader = () => (
   <svg
-    style={{ maxWidth: "250px" }}
+    style={{ maxWidth: "250px", backgroundColor: "#eee" }}
     viewBox="0 0 350 600"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <rect x="0" y="0" width="10" height="500" fill="#f2f2f2">
+    <rect x="0" y="0" width="10" height="600" fill="#f2f2f2">
       <animate
         attributeName="width"
         values="0;350;0"

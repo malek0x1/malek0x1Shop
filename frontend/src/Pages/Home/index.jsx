@@ -16,7 +16,11 @@ const Home = () => {
       `${process.env.REACT_APP_API_URL}/api/collections/all/5`
     )
       .then((res) => res.json())
-      .then((r) => setRes(r))
+      .then((r) => {
+        setTimeout(() => {
+          setRes(r);
+        }, 2000);
+      })
       .catch((e) => console.log(`error ${e}`));
   };
   useEffect(() => {
@@ -32,10 +36,14 @@ const Home = () => {
         paragraph="Stay cozy and stylish with our collection of comfortable and trendy hoodies, sweatpants, sweatshirts."
         btnText="Shop Now"
       />
-      {res ? (
+      {res.length ? (
         res.map((collection) => <ItemsSlider data={collection} />)
       ) : (
-        <ItemsSlider data="" skeleton />
+        <>
+          {[...Array(3)].map((skeleton) => (
+            <ItemsSlider data="" skeleton />
+          ))}
+        </>
       )}
     </div>
   );
